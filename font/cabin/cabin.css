@@ -1,0 +1,56 @@
+/* BEGIN Bold */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-Bold-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END Bold */
+/* BEGIN BoldItalic */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-BoldItalic-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END BoldItalic */
+/* BEGIN Italic */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-Italic-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END Italic */
+/* BEGIN Medium */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-Medium-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END Medium */
+/* BEGIN MediumItalic */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-MediumItalic-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END MediumItalic */
+/* BEGIN Regular */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-Regular-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END Regular */
+/* BEGIN SemiBold */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-SemiBold-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END SemiBold */
+/* BEGIN SemiBoldItalic */
+@font-face {
+    font-family: Cabin;
+    src: url("./fonts/Bold/Cabin-SemiBoldItalic-TTF.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal; }
+/* END SemiBoldItalic */

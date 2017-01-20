@@ -1,0 +1,14 @@
+/* BEGIN Regular */
+@font-face {
+  font-family: 'Big Noodle Titling';
+  src: url("./fonts/Regular/big_noodle_titling.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* END Regular */
+/* BEGIN Italic */
+@font-face {
+  font-family: 'Big Noodle Titling';
+  src: url("./fonts/Italic/big_noodle_titling_oblique.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+/* END Italic */
