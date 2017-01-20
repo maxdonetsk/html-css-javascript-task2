@@ -13,3 +13,89 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+main {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-image: url(../img/bg-xs.jpg);
+
+    @media (min-width: $screen-sm-min) {
+        background-image: url(../img/bg-sm.jpg);
+    }
+
+    @media (min-width: $screen-md-min) {
+        background-position: 50% 0;
+        background-image: url(../img/bg-md.jpg);
+    }
+
+    @media (min-width: $screen-lg-min) {
+        background-image: url(../img/bg-lg.jpg);
+    }
+}
+
+#logo {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#main-title {
+    text-shadow: 0px 0px 30px rgba($body-bg, 1), 0px 0px 15px rgba($body-bg, 1);
+    color: $title-color;
+    font-family: $title-font-family;
+    font-style: italic;
+    font-size: 15vw;
+    text-align: center;
+
+    @media (min-width: $screen-xs-min) {
+        font-size: 10vw;
+    }
+
+    @media (min-width: $screen-md-min) {
+        font-size: 4vw;
+    }
+
+    > br {
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+}
+
+#main-subtitle {
+    text-align: center;
+
+    h2 {
+        text-shadow: 0px 0px 30px rgba($body-bg, 1), 0px 0px 15px rgba($body-bg, 1);
+        color: $title-color;
+        font-family: $subtitle-font-family;
+        font-size: 6vw;
+        margin-top: 0;
+
+        @media (min-width: $screen-xs-min) {
+            font-size: 4vw;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 2vw;
+        }
+
+        > span {
+            display: inline-block;
+            margin-bottom: 10px;
+            position: relative;
+
+            &:nth-of-type(1) {
+                left: -15px;
+            }
+
+            &:nth-of-type(2) {
+                right: -15px;
+
+                @media (min-width: $screen-md-min) {
+                    right: -50px;
+                }
+            }
+        }
+    }
+}
