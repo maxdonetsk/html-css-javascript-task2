@@ -17,7 +17,7 @@ html, body {
 main {
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 50% 10%;
+    background-position: 50% 15%;
     background-image: url(../img/bg-xs.jpg);
 
     @media (min-width: $screen-sm-min) {
@@ -102,6 +102,11 @@ main {
 
 #form-wrapper {
     text-align: center;
+    margin-top: 20vw;
+
+    @media (min-width: $screen-md-min) {
+        margin-top: 0;
+    }
 
     h3 {
         text-shadow: 0px 0px 30px rgba($body-bg, 1), 0px 0px 15px rgba($body-bg, 1);
@@ -289,5 +294,30 @@ main {
 
     @media (min-width: $screen-md-min) {
         display: inline-block;
+    }
+}
+
+footer {
+    .footer-items {
+        margin-bottom: $grid-gutter-width - $default-padding;
+        text-align: center;
+
+        a {
+            margin-right: $default-padding;
+            margin-bottom: $default-padding;
+            display: inline-block;
+
+            &:hover, &:focus {
+                > img {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        margin-bottom: floor($grid-gutter-width / 2);
+        color: #898989;
+        text-align: justify;
     }
 }

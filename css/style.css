@@ -3150,7 +3150,7 @@ html, body {
 main {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 15%;
   background-image: url(../img/bg-xs.jpg); }
   @media (min-width: 768px) {
     main {
@@ -3211,7 +3211,11 @@ main {
             right: -50px; } }
 
 #form-wrapper {
-  text-align: center; }
+  text-align: center;
+  margin-top: 20vw; }
+  @media (min-width: 992px) {
+    #form-wrapper {
+      margin-top: 0; } }
   #form-wrapper h3 {
     text-shadow: 0px 0px 30px black, 0px 0px 15px black;
     color: #FFF;
@@ -3392,6 +3396,20 @@ main {
   @media (min-width: 992px) {
     #bottom-submit {
       display: inline-block; } }
+
+footer .footer-items {
+  margin-bottom: 40px;
+  text-align: center; }
+  footer .footer-items a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block; }
+    footer .footer-items a:hover > img, footer .footer-items a:focus > img {
+      opacity: 0.8; }
+footer .footer-info {
+  margin-bottom: 25px;
+  color: #898989;
+  text-align: justify; }
 
 /* Fonts */
 
