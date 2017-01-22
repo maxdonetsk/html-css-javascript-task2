@@ -99,3 +99,119 @@ main {
         }
     }
 }
+
+#form-wrapper {
+    text-align: center;
+
+    h3 {
+        text-shadow: 0px 0px 30px rgba($body-bg, 1), 0px 0px 15px rgba($body-bg, 1);
+        color: $title-color;
+        font-family: $title-font-family;
+        font-style: italic;
+        font-size: 7vw;
+        margin-top: 0;
+
+        @media (min-width: $screen-xs-min) {
+            font-size: 5vw;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 2.5vw;
+        }
+
+        > span {
+            color: $accent-color;
+            font-size: 110%;
+        }
+    }
+
+    form {
+        .form-control {
+            border-color: $input-bg;
+            border-radius: 0;
+            height: 50px;
+            padding-left: 9px;
+            padding-right: 9px;
+
+            @media (min-width: $screen-md-min) {
+                border-color: $body-bg;
+                background-color: $body-bg;
+                color: $title-color;
+            }
+
+            &:focus {
+                @include box-shadow(inset 0 1px 1px rgba(black, 0.075), 0 0 8px rgba($accent-color, 0.6));
+                border-color: $accent-color;
+            }
+        }
+
+        [type="submit"] {
+            box-shadow: inset 0 0 35px lighten($accent-color, 20), inset 0 0 5px lighten($accent-color, 30);
+            background-color: darken($accent-color, 17);
+            border: 1px solid lighten($accent-color, 35);
+            font-family: $title-font-family;
+            font-size: 36px;
+            font-style: italic;
+            color: #FFF;
+            height: 60px;
+            width: 100%;
+            border-radius: 0;
+            padding: 3px;
+            position: relative;
+
+            &:after {
+                @include background-size-cover;
+                content: "";
+                display: inline-block;
+                position: absolute;
+                background-image: url(../img/right-arrow-mobile.png);
+                top: 15px;
+                width: 25px;
+                height: 28px;
+
+                @media (min-width: $screen-md-min) {
+                    background-image: url(../img/right-arrow-desktop.png);
+                    width: 30px;
+                }
+            }
+
+            &:hover, &:focus {
+                box-shadow: inset 0 0 35px lighten($accent-color, 15), inset 0 0 5px lighten($accent-color, 25);
+                background-color: darken($accent-color, 12);
+            }
+
+            > span {
+                display: inline-block;
+                margin-right: 10px;
+                margin-left: -20px;
+            }
+        }
+
+        #submit-wrapper {
+            positon: relative;
+
+            &:before {
+                @include background-size-cover;
+                display: inline-block;
+                position: absolute;
+                background-image: url(../img/right-arrow-submit.png);
+                left: -105px;
+                bottom: 3px;
+                width: 127px;
+                height: 116px;
+
+                @media (min-width: $screen-md-min) {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+#code {
+    width: 20%;
+}
+
+#phone {
+    @include calc(width, 80% - #{$form-group-margin-bottom});
+}

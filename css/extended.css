@@ -22,5 +22,8 @@ Example: @include prefix((transform: translateY(-50%)));
 Mixin for background-size cover.
 Example: @include background-size-cover;
 */
+/*mixin for calc
+Example: @include calc(height, 50% - 10px);
+*/
 
 /*# sourceMappingURL=extended.css.map */
