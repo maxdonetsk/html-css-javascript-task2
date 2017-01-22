@@ -18,7 +18,9 @@
 4. All sizes and spaces should be according to layouts
 
 Web Layout:
+
 ![Layout](/Free-Signals-Web.jpg)
 
 Mobile Layout:
+
 ![Layout](/Free-Signals-Mobile.jpg)
