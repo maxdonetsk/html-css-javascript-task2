@@ -17,5 +17,8 @@ Example: @include background-size-cover;
 /*mixin for calc
 Example: @include calc(height, 50% - 10px);
 */
+/*mixin for flex-centering
+Example: @include flex-centering;
+*/
 
 /*# sourceMappingURL=mixins.css.map */

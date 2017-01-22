@@ -25,6 +25,9 @@ Example: @include background-size-cover;
 /*mixin for calc
 Example: @include calc(height, 50% - 10px);
 */
+/*mixin for flex-centering
+Example: @include flex-centering;
+*/
 html, body {
   width: 100%;
   height: 100%; }
@@ -99,14 +102,17 @@ main {
     color: #FFF;
     font-family: "Big Noodle Titling", "Helvetica Neue", Helvetica, Arial sans-serif;
     font-style: italic;
-    font-size: 7vw;
+    font-size: 6vw;
     margin-top: 0; }
     @media (min-width: 480px) {
       #form-wrapper h3 {
-        font-size: 5vw; } }
+        font-size: 4vw; } }
     @media (min-width: 992px) {
       #form-wrapper h3 {
-        font-size: 2.5vw; } }
+        font-size: 2vw; } }
+    @media (min-width: 1200px) {
+      #form-wrapper h3 {
+        font-size: 1.75vw; } }
     #form-wrapper h3 > span {
       color: #69C60F;
       font-size: 110%; }
@@ -165,27 +171,28 @@ main {
       display: inline-block;
       margin-right: 10px;
       margin-left: -20px; }
-  #form-wrapper form #submit-wrapper {
-    positon: relative; }
-    #form-wrapper form #submit-wrapper:before {
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      -o-background-size: 100%;
-      background-size: 100%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      display: inline-block;
-      position: absolute;
-      background-image: url(../img/right-arrow-submit.png);
-      left: -105px;
-      bottom: 3px;
-      width: 127px;
-      height: 116px; }
-      @media (min-width: 992px) {
-        #form-wrapper form #submit-wrapper:before {
-          content: ""; } }
+
+#submit-wrapper {
+  positon: relative; }
+  #submit-wrapper:before {
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/right-arrow-submit.png);
+    left: -105px;
+    bottom: 3px;
+    width: 127px;
+    height: 116px; }
+    @media (min-width: 992px) {
+      #submit-wrapper:before {
+        content: ""; } }
 
 #code {
   width: 20%; }
@@ -193,5 +200,74 @@ main {
 #phone {
   width: -webkit-calc(80% - 10px);
   width: calc(80% - 10px); }
+
+.items-row {
+  padding-top: 50px; }
+
+.column-item-wrapper {
+  margin-bottom: 50px;
+  border: 5px solid #d81604;
+  border-radius: 20px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center; }
+  .column-item-wrapper .column-item:before {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    background-image: url(../img/transparent-triangle.png);
+    width: 100%;
+    height: 100%;
+    left: 0; }
+  .column-item-wrapper .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    resize: both;
+    color: #000;
+    font-family: "Big Noodle Titling", "Helvetica Neue", Helvetica, Arial sans-serif;
+    padding: 10px;
+    font-size: 30px;
+    line-height: 1;
+    background-color: #eabf21;
+    margin: 0;
+    min-height: 80px; }
+    .column-item-wrapper .header > span {
+      position: relative; }
+  .column-item-wrapper .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    resize: both;
+    padding: 10px;
+    color: #FFF;
+    min-height: 130px; }
+  .column-item-wrapper .footer {
+    min-height: 65px;
+    position: relative; }
+    .column-item-wrapper .footer > img {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin-bottom: 10px;
+      position: absolute;
+      left: 50%;
+      bottom: 0; }
 
 /*# sourceMappingURL=custom.css.map */
